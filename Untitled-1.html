@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Charakterystyka Partyjna</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body style="background-color: red;">
+    <h3>Członek Partii Komunistycznej ROLEPLAY</h3>
+    <br>
+    <h3>*Rządzisz obywatelami</h3>
+    <h1>Kostka D20 🎲</h1>
+<button onclick="rzucKostka()">Rzuć!</button>
+<p id="wynik">Wynik: -</p>
+
+<script>
+function rzucKostka() {
+  const wynik = Math.floor(Math.random() * 20) + 1;
+  document.getElementById("wynik").textContent = "Wynik: " + wynik;
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  background: radial-gradient(circle at center, #ff0000, #4a0000);
+  color: #fff;
+}
+button {
+  background: #ff3333;
+  color: white;
+  font-size: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #ff5555;
+}
+p {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+
+</style>
+
+<img src="portret członka part.png" alt="partia" width="80%" height="80%">
+    
+</body>
+</html>
